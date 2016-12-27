@@ -5,7 +5,7 @@ All functionality is found in the CropView.swift file. Just copy the file and cr
 ```swift
 if let image = UIImage(named: "myImage.jpg"){
             
-            cropView = CropView(frame: CGRect(x:0, y:0, width:Int(vWidth), height:vHeight), image: image)
-            self.view.addSubview(cropView!)
-        }
-'''
+   cropView = CropView(frame: CGRect(x:0, y:0, width:Int(vWidth), height:vHeight), image: image)
+   self.view.addSubview(cropView!)
+}
+```
