@@ -12,7 +12,6 @@
 		127D778E1E125B1100224675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127D778C1E125B1100224675 /* Main.storyboard */; };
 		127D77901E125B1100224675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127D778F1E125B1100224675 /* Assets.xcassets */; };
 		127D77931E125B1100224675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127D77911E125B1100224675 /* LaunchScreen.storyboard */; };
-		127D779C1E125CA800224675 /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 127D779B1E125CA800224675 /* bunny.png */; };
 		127D779E1E12648800224675 /* beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 127D779D1E12648800224675 /* beach.jpg */; };
 		127D77A01E1293A400224675 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127D779F1E1293A400224675 /* CropView.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		127D778F1E125B1100224675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		127D77921E125B1100224675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		127D77941E125B1100224675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		127D779B1E125CA800224675 /* bunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunny.png; sourceTree = "<group>"; };
 		127D779D1E12648800224675 /* beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beach.jpg; sourceTree = "<group>"; };
 		127D779F1E1293A400224675 /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				127D779D1E12648800224675 /* beach.jpg */,
-				127D779B1E125CA800224675 /* bunny.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -141,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127D779C1E125CA800224675 /* bunny.png in Resources */,
 				127D779E1E12648800224675 /* beach.jpg in Resources */,
 				127D77931E125B1100224675 /* LaunchScreen.storyboard in Resources */,
 				127D77901E125B1100224675 /* Assets.xcassets in Resources */,
@@ -320,6 +316,7 @@
 				127D77991E125B1100224675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
