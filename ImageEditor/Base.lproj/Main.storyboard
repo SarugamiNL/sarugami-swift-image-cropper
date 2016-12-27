@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiv-cP-Uol">
+                                <rect key="frame" x="113" y="621" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.74815538194444442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5Da-nq-Xfv"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="crop"/>
+                                <connections>
+                                    <action selector="onCropPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6o0-rf-BKv"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J16-yv-9wo">
+                                <rect key="frame" x="0.0" y="334" width="375" height="0.0"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oiv-cP-Uol" secondAttribute="bottom" constant="16" id="2DE-gS-zj4"/>
+                            <constraint firstItem="J16-yv-9wo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R8n-R3-OUY"/>
+                            <constraint firstItem="J16-yv-9wo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TKq-QT-jez"/>
+                            <constraint firstAttribute="trailing" secondItem="J16-yv-9wo" secondAttribute="trailing" id="gu1-xo-f6d"/>
+                            <constraint firstItem="oiv-cP-Uol" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igj-GA-loI"/>
+                            <constraint firstItem="J16-yv-9wo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qhn-sA-7qU"/>
+                            <constraint firstItem="J16-yv-9wo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xkL-Yz-etU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="croppButton" destination="oiv-cP-Uol" id="5eY-Uu-1Gl"/>
+                        <outlet property="previewImage" destination="J16-yv-9wo" id="jVZ-jN-eGr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="wO1-VZ-1Qv">
+                    <connections>
+                        <action selector="scale:" destination="BYZ-38-t0r" id="N00-Hl-otD"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BIb-1X-MYg">
+                    <connections>
+                        <action selector="pan:" destination="BYZ-38-t0r" id="ptw-iP-srt"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-90" y="28"/>
+        </scene>
+    </scenes>
+</document>
