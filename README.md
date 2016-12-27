@@ -1,7 +1,7 @@
 # sarugami swift image cropper
 Here an example of doing some easy image cropping using a scrollview, allowing to position and zoom the image.
 
-All functionality is found in the CropView.swift file. Just copy the file and create a CropView like this :
+All functionality is found in the CropView.swift file. Just copy the file paste it into your project and create a CropView like this :
 
 ```swift
 if let image = UIImage(named: "myImage.jpg"){
