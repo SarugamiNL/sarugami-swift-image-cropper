@@ -13,6 +13,6 @@ if let image = UIImage(named: "myImage.jpg"){
 
 To crop the image just call the cropImage() method on the CropView
 
-```
+```swift
 let croppedImage = cropView.cropImage()
 ```
