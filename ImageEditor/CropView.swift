@@ -34,11 +34,11 @@ class CropView: UIView {
         
         let vWidth = self.frame.width
         let vHeight = self.frame.height
-        
+        self.backgroundColor = UIColor.white
         scrollView = UIScrollView()
         scrollView.delegate = self
         scrollView.frame = CGRect(x:0, y:0, width:Int(vWidth), height:Int(vHeight))
-        scrollView.backgroundColor = UIColor.black
+
         scrollView.alwaysBounceVertical = false
         scrollView.alwaysBounceHorizontal = false
         scrollView.showsVerticalScrollIndicator = true
@@ -57,10 +57,10 @@ class CropView: UIView {
         if let image = self.image{
             
             scrollView.contentSize = CGSize(width: image.size.width, height: image.size.height)
-            
+            scrollView.contentMode = .scaleAspectFill
             imageView = UIImageView(frame: CGRect(x: 0, y: 0, width:  image.size.width, height: image.size.height))
             imageView.image = image
-            imageView.contentMode = .scaleAspectFill
+            //imageView.contentMode = .scaleAspectFill
             scrollView.addSubview(imageView)
             scrollView.zoomScale = getMinimumZoomScale()
         }
